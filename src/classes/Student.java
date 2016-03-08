@@ -32,9 +32,10 @@ public class Student extends Person implements Students{
         return "I am student{\n\t"+
                                         "name="+getName()+
                                         "\n\tfamily="+getFamily()+
-                                        "\n\tage="+getAge()+
+                                        "\n\tage="+age()+
+                                        "\n\tМой день рождения:"+birthdey()+
                                         "\n\tgroup="+getGroup()+
-                                    "\n}";
+                                    "\n\t}";
     }
 
     @Override

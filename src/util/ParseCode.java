@@ -23,6 +23,7 @@ public class ParseCode {
 
     public ParseCode(String code) {
         setCode(code);
+        parse(code);
     }
     private void setCode(String code) {
         this.code = code;
@@ -112,9 +113,17 @@ public class ParseCode {
         }
         return age;
     }
+    
     public String getGender(){
         return this.gender;
     }
-
-  
+    
+    public String getBirthdey(){
+        String d=Integer.toString(getDey());
+        String m=Integer.toString(getMonth());
+        String y=Integer.toString(getYear());
+        String birthdey= d + "." + m + "." + y;    
+        return birthdey;
+    }
+ 
 }

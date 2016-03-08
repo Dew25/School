@@ -41,12 +41,12 @@ public class Administrator extends Employee{
         return "I am Administrator{\n\t" + 
                 "name=" + this.getName() +
                 "\n\tfamily=" + this.getFamily() +
-                "\n\tage=" + this.getAge() +
+                "\n\tage=" + this.age() +
                 "\n\tsection=" + this.getSection()+
                 "\n\tstatus=" + this.getStatus()+
                 "\n\tsalary=" + this.getSalary()+
-                       
-                "\n}";
+                 "\n\tМой день рождения:"+birthdey()+      
+                "\n\t}";
     }
 
     

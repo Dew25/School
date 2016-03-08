@@ -82,40 +82,15 @@ public abstract class Person implements Persons{
  
         return m.matches();
     }
-    public String getBirthdey(){
-        return null;
-    }
-    public Integer getAge() {
-        String youCode = this.code;
-        String g=youCode.substring(0, 1);
-        int gen=Integer.parseInt(g);
-        String year;
-        switch (gen) {
-            case 3:
-                {
-                    year= "19"+youCode.substring(1,3);
-                    break;
-                }
-            case 5:
-                {
-                    year= "20"+youCode.substring(1,3);
-                    break;
-                }
-            default:
-                {
-                    year= "0";
-                    break;
-                }
-        }
-        String month = youCode.substring(3,5);
-        String dey = youCode.substring(5,7);
-     
-        //Integer age = calculateAge(Integer.parseInt(year), Integer.parseInt(month)-1, Integer.parseInt(dey));//"2012,12,13"
-       // System.out.println(" year="+year+" month="+month+" dey="+dey+" age="+age);
+
+    public Integer age() {
        ParseCode parseCode=new ParseCode(this.code); 
        return parseCode.getAge();
     }
-   
+   public String birthdey(){
+       ParseCode parseCode=new ParseCode(this.code); 
+       return parseCode.getBirthdey();
+   }
 
     
 }

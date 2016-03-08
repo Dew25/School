@@ -18,7 +18,9 @@ public class ListPersons {
         List<Persons> person = new ArrayList<>();
         person.add(new Administrator("IVKHK", 2000.00, "Hannes", "Mets", "35807142543", "Director"));
         person.add(new Teacher("IT", null, "Ants", "Tamm", "35807142543"));
-        person.add(new Student("Ivan", "Vassiljev", "39206124353", "1PTVR"));
+        person.add(new Student("Ivan", "Vassiljev", "39206124353", "1KTVR"));
+        person.add(new Student("Fedja", "Fjodorov", "39606031223", "1PTVR"));
+                
        
         return person;
     }

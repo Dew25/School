@@ -21,16 +21,17 @@ public class Teacher extends Employee{
         super(section, salary, name, family, code);
     }
 
-    @Override
+   
     public String toString() {
         return "I am Teacher{\n\t" + 
                 "name=" + this.getName() +
                 "\n\tfamily=" + this.getFamily() +
-                "\n\tage=" + this.getAge() +
+                "\n\tage=" + this.age() +
                 "\n\tsection=" + this.getSection()+
                 "\n\tsalary=" + this.getSalary()+
+                "\n\tМой день рождения:"+birthdey()+
                        
-                '}';
+                "\n\t}";
     }
 
        
