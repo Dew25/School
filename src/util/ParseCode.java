@@ -122,8 +122,12 @@ public class ParseCode {
         String d=Integer.toString(getDey());
         String m=Integer.toString(getMonth());
         String y=Integer.toString(getYear());
-        String birthdey= d + "." + m + "." + y;    
-        return birthdey;
+        if(getMonth()>9){
+           return  d + "." + m + "." + y;    
+        }else{
+           return  d + ".0" + m + "." + y;
+        }
+        
     }
  
 }

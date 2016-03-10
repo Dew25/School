@@ -17,6 +17,7 @@ public class ListPersons {
     public List<Persons> getPersons(){
         List<Persons> person = new ArrayList<>();
         person.add(new Administrator("IVKHK", 2000.00, "Hannes", "Mets", "35807142543", "Director"));
+        person.add(new Administrator("IT", 1000.00, "Natella", "Mihhailova", "38902212214", "Начальник отделения"));
         person.add(new Teacher("IT", null, "Ants", "Tamm", "35807142543"));
         person.add(new Student("Ivan", "Vassiljev", "39206124353", "1KTVR"));
         person.add(new Student("Fedja", "Fjodorov", "39606031223", "1PTVR"));
