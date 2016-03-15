@@ -20,6 +20,8 @@ public class ParseCodeTest {
     private ParseCode instance;
     
     public ParseCodeTest() {
+         ParseCode inst = new ParseCode("36007143322");
+        this.instance=inst;
     }
     
     @BeforeClass
@@ -32,8 +34,7 @@ public class ParseCodeTest {
     
     @Before
     public void setUp() {
-        ParseCode inst = new ParseCode("36007143322");
-        this.instance=inst;
+       
     }
     
     @After

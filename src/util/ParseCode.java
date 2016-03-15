@@ -35,7 +35,7 @@ public class ParseCode {
         return dey;
     }
 
-    public void setDey(int dey) {
+    private void setDey(int dey) {
         this.dey = dey;
     }
 
@@ -43,7 +43,7 @@ public class ParseCode {
         return month;
     }
 
-    public void setMonth(int month) {
+    private void setMonth(int month) {
         this.month = month;
     }
 
@@ -51,7 +51,7 @@ public class ParseCode {
         return year;
     }
 
-    public void setYear(int year) {
+    private void setYear(int year) {
         this.year = year;
     }
     private void parse(String code){
@@ -73,13 +73,13 @@ public class ParseCode {
                     setGender("Мужчина");
                     break;
                 }
-                case 4:
+            case 4:
                 {
                     year= "19"+youCode.substring(1,3);
                     setGender("Женщина");
                     break;
                 }
-                case 6:
+            case 6:
                 {
                     year= "20"+youCode.substring(1,3);
                     setGender("Женщина");
@@ -123,9 +123,9 @@ public class ParseCode {
         String m=Integer.toString(getMonth());
         String y=Integer.toString(getYear());
         if(getMonth()>9){
-           return  d + "." + m + "." + y;    
+           return  d+"."+m+"."+y;    
         }else{
-           return  d + ".0" + m + "." + y;
+           return  d+".0"+m+"."+y;
         }
         
     }
